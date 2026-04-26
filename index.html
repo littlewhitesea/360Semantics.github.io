@@ -165,41 +165,37 @@ End teaser video-->
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title has-text-centered">Synthesized 360-degree Panoramas with Given Text Prompts</h2>
-      <p class="content has-text-centered">
-        To easily recognize the continuity or discontinuity between the leftmost and rightmost sides of the generated image, we copy the leftmost area indicated by the red dashed box and paste it onto the rightmost side of the image.
-      </p>
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/g1.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          360-degree panoramic image, futuristic hyper-realistic environment, Epic concept art
-        </h2>
+<!-- Motivation -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-fullwidth">
+        <h2 class="title is-3">Motivation and Research Question</h2>
+        
+        <div class="column is-centered has-text-centered">
+          <img src="static/images/teaser7.png" 
+               alt="Comparison between 360-degree panoramic and perspective image-text pairs"/>
+          <p class="is-size-6 has-text-grey">
+            Comparison between 360-degree panoramic image-text pairs and conventional perspective image-text pairs.
+          </p>
+        </div>
+
+        <p class="content has-text-centered">
+          <strong>Motivation.</strong>
+          360-degree panoramic image-text pairs exhibit distinct semantic attributes in both textual and visual modalities, compared to perspective image-text pairs. Textually, prompts for 360-degree panoramic images often include explicit 360-degree panoramic format identifiers such as <em>“a 360 degree view of”</em> or <em>“360 photo”</em>, which convey what we define as <strong>360-degree textual semantics</strong>. Visually, 360-degree panoramic images capture a complete spherical field of view (360&deg; &times; 180&deg;), which results in inherent semantic invariance under horizontal circular shifts; the scene content remains identical despite rotation. We term this invariant semantics <strong>360-degree visual semantics</strong>.
+        </p>
+
+        <p class="content has-text-centered">
+          <strong>Research Question.</strong>
+          These unique characteristics motivate our central research question: 
+          <strong>To what extent can standard CLIP models, predominantly trained on perspective image-text pairs, comprehend the distinct semantics inherent in 360-degree panoramic image-text pairs?</strong>
+        </p>
+
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/g2.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          360-degree panoramic image, cyberpunk city in a foggy night, science fiction industrial hard science concept art
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/g3.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         360-degree panoramic image, japanese anime style downtown city street, afternoon
-       </h2>
-     </div>
+    </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End Motivation -->
 
 <!-- Methodology -->
 <section class="section hero is-light">
