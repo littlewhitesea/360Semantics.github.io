@@ -147,7 +147,7 @@
 </section>
 End teaser video-->
 
-<!-- Paper abstract -->
+<!-- Paper abstract
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -162,7 +162,7 @@ End teaser video-->
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
+End paper abstract -->
 
 
 <!-- Motivation -->
@@ -170,7 +170,7 @@ End teaser video-->
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-fullwidth">
-        <h2 class="title is-3">Motivation and Research Question</h2>
+        <h2 class="title is-3">Motivation and research question</h2>
         
         <div class="column is-centered has-text-centered">
           <img src="static/images/teaser7.png" 
@@ -182,7 +182,7 @@ End teaser video-->
 
         <p class="content has-text-centered">
           <strong>Motivation:</strong>
-          360-degree panoramic image-text pairs exhibit distinct semantic attributes in both textual and visual modalities, compared to perspective image-text pairs. Textually, prompts for 360-degree panoramic images often include explicit 360-degree panoramic format identifiers such as <em>“a 360 degree view of”</em> or <em>“360 photo”</em>, which convey what we define as <em>360-degree textual semantics<em>. Visually, 360-degree panoramic images capture a complete spherical field of view (360&deg; &times; 180&deg;), which results in inherent semantic invariance under horizontal circular shifts; the scene content remains identical despite rotation. We term this invariant semantics <em>360-degree visual semantics<em>.
+          360-degree panoramic image-text pairs exhibit distinct semantic attributes in both textual and visual modalities, compared to perspective image-text pairs. Textually, prompts for 360-degree panoramic images often include explicit 360-degree panoramic format identifiers such as <em>“a 360 degree view of”</em> or <em>“360 photo”</em>, which convey what we define as <em>360-degree textual semantics</em>. Visually, 360-degree panoramic images capture a complete spherical field of view (360&deg; &times; 180&deg;), which results in inherent semantic invariance under horizontal circular shifts; the scene content remains identical despite rotation. We term this invariant semantics <em>360-degree visual semantics</em>.
         </p>
 
         <p class="content has-text-centered">
@@ -195,6 +195,75 @@ End teaser video-->
   </div>
 </section>
 <!-- End Motivation -->
+
+
+<!-- Textual -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-fullwidth">
+        <h2 class="title is-3">Probing understanding of 360-degree textual semantics</h2>
+        
+        <div class="column is-centered has-text-centered">
+          <img src="static/images/framework_CLIP_keyword6.pdf" 
+               alt="Probing understanding of 360-degree textual semantics"/>
+          <p class="is-size-6 has-text-grey">
+              Overview of our framework to evaluate CLIP models’ understanding of 360-degree textual semantics. 
+              The format cue <em>V<sup>*</sup></em> is a keyword explicitly identifying the 360-degree panoramic image format 
+              (e.g., “<em>360 panorama</em>”, “<em>360 photo</em>”), while <em>U<sup>*</sup></em> is a generic cue 
+              (e.g., “<em>photo</em>”, “<em>image</em>”) that lacks specific 360-degree panoramic format information.
+          </p>
+        </div>
+
+        <p class="content has-text-centered">
+          <strong>Statistical hypothesis test:</strong>
+              <em>H<sub>0</sub></em>: <em>s</em> − <em>s</em><sup>u</sup> &le; 0.
+        </p>
+
+        <p class="content has-text-centered">
+          <strong>Findings:</strong> 
+          CLIP models can comprehend 360-degree textual semantics.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Textual -->
+
+
+<!-- Visual -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-fullwidth">
+        <h2 class="title is-3">Probing understanding of 360-degree visual semantics</h2>
+        
+        <div class="column is-centered has-text-centered">
+          <img src="static/images/framework_CLIP_swap_360_v4.pdf" 
+               alt="Probing understanding of 360-degree textual semantics"/>
+          <p class="is-size-6 has-text-grey">
+            Overview of our framework to assess CLIP models’ understanding of 360-degree visual semantics. 
+            Image <em>I</em><sup>&delta;</sup> is obtained by applying a horizontal circular shift of 
+            <em>&delta;</em> pixels to <em>I</em> of size <em>H</em> &times; <em>W</em>.
+          </p>
+        </div>
+
+        <p class="content has-text-centered">
+          <strong>Statistical hypothesis test:</strong>
+          <em>H</em><sub>0,j</sub>: |<em>s</em> − <em>s</em><sup>&delta;<sub>j</sub></sup>| &ge; <em>&beta;</em>.
+        </p>
+
+        <p class="content has-text-centered">
+          <strong>Findings:</strong> 
+          CLIP models lack a robust understanding of 360-degree visual semantics.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Textual -->
 
 <!-- Methodology 
 <section class="section hero is-light">
