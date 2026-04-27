@@ -134,4 +134,67 @@ body {
 }
 
 
+/* ===== Project page polish ===== */
+
+.section-white {
+  background-color: #ffffff;
+}
+
+.section-light {
+  background-color: #f7f9fb;
+  border-top: 1px solid #e6e8eb;
+  border-bottom: 1px solid #e6e8eb;
+}
+
+.project-figure {
+  margin: 1.5rem auto 2rem auto;
+}
+
+.project-figure img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.figure-caption {
+  margin-top: 0.75rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.formula-box {
+  display: inline-block;
+  background: #ffffff;
+  border: 1px solid #dcdfe6;
+  border-radius: 12px;
+  padding: 14px 22px;
+  margin: 12px 0;
+  font-family: "Times New Roman", serif;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.section .title {
+  margin-bottom: 1.5rem;
+}
+
+.content {
+  line-height: 1.75;
+}
+
+em {
+  font-style: italic;
+}
+
+.highlight-finding {
+  display: inline-block;
+  background: #eef6ff;
+  border-left: 4px solid #3273dc;
+  padding: 12px 18px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+
 
