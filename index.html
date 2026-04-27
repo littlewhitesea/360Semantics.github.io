@@ -205,7 +205,7 @@ End paper abstract -->
         <h2 class="title is-3">Probing understanding of 360-degree textual semantics</h2>
         
         <div class="column is-centered has-text-centered">
-          <img src="static/images/framework_CLIP_keyword6.pdf" 
+          <img src="static/images/framework_CLIP_keyword6.png" 
                alt="Probing understanding of 360-degree textual semantics"/>
           <p class="is-size-6 has-text-grey">
               Overview of our framework to evaluate CLIP models’ understanding of 360-degree textual semantics. 
@@ -240,8 +240,8 @@ End paper abstract -->
         <h2 class="title is-3">Probing understanding of 360-degree visual semantics</h2>
         
         <div class="column is-centered has-text-centered">
-          <img src="static/images/framework_CLIP_swap_360_v4.pdf" 
-               alt="Probing understanding of 360-degree textual semantics"/>
+          <img src="static/images/framework_CLIP_swap_360_v4.png" 
+               alt="Probing understanding of 360-degree visual semantics"/>
           <p class="is-size-6 has-text-grey">
             Overview of our framework to assess CLIP models’ understanding of 360-degree visual semantics. 
             Image <em>I</em><sup>&delta;</sup> is obtained by applying a horizontal circular shift of 
@@ -255,6 +255,11 @@ End paper abstract -->
         </p>
 
         <p class="content has-text-centered">
+          <strong>Definition of the Stability Bound <em>&beta;</em>:</strong>
+          <em>&beta;</em> = <em>Q</em><sub>3</sub> + 1.5 &times; IQR.
+        </p>
+
+        <p class="content has-text-centered">
           <strong>Findings:</strong> 
           CLIP models lack a robust understanding of 360-degree visual semantics.
         </p>
@@ -263,7 +268,44 @@ End paper abstract -->
     </div>
   </div>
 </section>
-<!-- End Textual -->
+<!-- End Visual -->
+
+
+
+<!-- LoRA -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-fullwidth">
+        <h2 class="title is-3">Improving understanding of 360-degree visual semantics</h2>
+        
+        <div class="column is-centered has-text-centered">
+          <img src="static/images/fine_tune_framework7.png" 
+               alt="Improving understanding of 360-degree textual semantics"/>
+          <p class="is-size-6 has-text-grey">
+             Overview of the fine-tuning framework using LoRA.
+          </p>
+        </div>
+
+        <p class="content has-text-centered">
+          <strong>Statistical hypothesis test:</strong>
+                <em>L</em><sub>FT</sub> =
+  <em>&lambda;</em> &middot;
+  <em>L</em><sub>charb</sub>(<em>s</em><sup>&Delta;</sup><sub>&theta;</sub>, <em>s</em><sub>&theta;</sub>)
+  + (1 − <em>&lambda;</em>) &middot;
+  <em>L</em><sub>charb</sub>(<em>s</em><sup>&Delta;</sup><sub>&theta;</sub>, <em>s</em>).
+        </p>
+
+        <p class="content has-text-centered">
+          <strong>Findings:</strong> 
+          Fine-tuning instilling shift invariance can improve comprehension of 360-degree visual semantics, while incurring a slight degradation in baseline performance, highlighting the trade-off inherent in adapting CLIP for 360-degree panoramas.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End LoRA -->
 
 <!-- Methodology 
 <section class="section hero is-light">
